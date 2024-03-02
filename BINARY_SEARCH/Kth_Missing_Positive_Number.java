@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/kth-missing-positive-number/description/
 package BINARY_SEARCH;
 import java.util.Scanner;
 public class Kth_Missing_Positive_Number {
