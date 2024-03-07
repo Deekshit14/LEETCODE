@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/guess-number-higher-or-lower/description/
 package BINARY_SEARCH;
 
 import java.util.Scanner;
@@ -17,6 +18,16 @@ public class Guess_Number_Higher_or_Lower {
         int n = sc.nextInt();   /* The number should be greter than pickNumber in guess(int num) function 
                                 oterwise we get -1 i.e, answer not found */
         System.out.println(guessNumber(n));
+        /* Output
+          Enter your guess
+            10
+            9
+         */
+        /* Output : 
+            Enter your guess
+            5
+            -1
+        */
     }
 
     public static int guessNumber(int n) {
