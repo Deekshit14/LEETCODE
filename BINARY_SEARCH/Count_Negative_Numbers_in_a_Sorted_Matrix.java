@@ -11,19 +11,19 @@ public class Count_Negative_Numbers_in_a_Sorted_Matrix {
     }
     public static int countNegatives(int[][] grid) {
         int ans = 0;
-        for (int i=0; i<grid.length; i++)
+        for (int r=0; r<grid.length; r++)
         {
             int start = 0;
-            int end = grid[i].length-1;
+            int end = grid[r].length-1;
             while (start <= end)
             {
                 int mid = start + (end - start)/2;
-                if (grid[i][mid] >= 0)
+                if (grid[r][mid] >= 0)
                     start = mid + 1;
                 else 
                     end = mid - 1;
             }
-            ans += grid[i].length - start;
+            ans += grid[r].length - start;
         }
         return ans;
     }
