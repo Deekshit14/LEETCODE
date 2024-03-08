@@ -10,15 +10,15 @@ public class Check_If_N_and_Its_Double_Exist {
     }
     public static boolean checkIfExist(int[] arr) {
         Arrays.sort(arr);
-        for (int i=0; i<arr.length; i++)
+        for (int j=0; j<arr.length; j++)
         {
-            int target = 2*arr[i];
+            int target = 2*arr[j];
             int start = 0;
             int end = arr.length - 1;
             while(start <= end) 
             {
                 int mid = start + (end-start)/2;
-                if (arr[mid] == target && mid != i) // i!=0
+                if (arr[mid] == target && mid != j) // i!=j as per question. Note: i variable is not used in this code
                     return true;
                 else if (arr[mid] < target)
                     start = mid + 1;
