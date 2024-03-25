@@ -6,6 +6,6 @@ class Defanging_an_IP_Address {
         System.out.println(defangIPaddr(address));
     }
     public static String defangIPaddr(String address) {
-        return address.replaceall(".","[.]");
+        return address.replace(".","[.]");
     }
 }
