@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/count-items-matching-a-rule/description/
 package STRINGS;
 import java.util.ArrayList;
 import java.util.List;
